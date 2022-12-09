@@ -52,7 +52,7 @@ Une fois le boot réussis vous devez proccéder à l'installation : <br>
 <br><br><img src="Screen\6.png"><br>
 
 - Choisir votre mot de passe ( Le mien est : `iutiut34!`)
-
+<br><br><img src="Screen\7.png"><br><br>
 > Une fois fini il nous vous reste plus que à modifier les paramètre réseaux dans mon cas les suivants était appliquer :
 <br>Ip : 10.202.0.154/16
 <br>Gateway : 10.202.255.254
@@ -213,7 +213,7 @@ La mémoire accordée est la quantité de mémoire physique hôte ou de mémoire
 <img src=Screen\40.png><br><br>
 
 
-10.Recherchez les dossiers (folders) du Vcenter<br>`Get-Folder  `<img src=Screen\41.png><br><br>
+10.Recherchez les dossiers (folders) du Vcenter<br>`Get-Folder`<br><img src=Screen\41.png><br><br>
 
 
 11.Créer un nouveau cluster MonClusterAsur localisé dans le datacenter IUTBéziers.<br>`New-Cluster -Name "MonClusterAsur` -Location "IUTBeziers"<img src=Screen\42.png><br><br>
@@ -228,13 +228,13 @@ La mémoire accordée est la quantité de mémoire physique hôte ou de mémoire
 14.Listez les datastores. A quoi sert un datastore ?<br>`Get-Datastore`<br>Le datastore permet de stocker les VM<img src=Screen\45.png><br><br>
 
 
-15.Listez les VM présentes via PowerCli.<br>`Get-VM`<img src=Screen\46.png><br><br>
+15.Listez les VM présentes via PowerCli.<br>`Get-VM`<br><img src=Screen\46.png><br><br>
 
 
-16.Listez les VM dont le nom commence par "alpine".<br>`Get-VM -NAME ALPINE*`<img src=Screen\47.png><br><br>
+16.Listez les VM dont le nom commence par "alpine".<br>`Get-VM -NAME ALPINE*`<br><img src=Screen\47.png><br><br>
 
 
-17.Listez les VM dont l’état est poweroff.<br>`Get-VM | grep PoweredOff`<img src=Screen\48.png><br><br>
+17.Listez les VM dont l’état est poweroff.<br>`Get-VM | grep PoweredOff`<br><img src=Screen\48.png><br><br>
 
 
 18.Stoppez une VM Alpine, redémarrez-la sans demander de confirmation (suivre en même temps sur
@@ -275,13 +275,13 @@ Expression={$_.Host.Name}}
 <img src=Screen\56.png><br><br>
 
 
-27.Détruisez votre VM vmtest0x.<br>`remove-vm vmtest0x`<img src=Screen\57.png><br><br>
+27.Détruisez votre VM vmtest0x.<br>`remove-vm vmtest0x`<br><img src=Screen\57.png><br><br>
 
 
 28.Lister les deux cartes réseaux physiques de l’hôte ESX.<br>`Get-VMHostNetworkAdapter -Physical`<img src=Screen\58.png><br><br>
 
 
-29.Lister la liste des virtualswitch de l’ESX . A quoi sert un virtual switch ?<br>`Get-VirtualSwitch`<img src=Screen\59.png><br><br>
+29.Lister la liste des virtualswitch de l’ESX . A quoi sert un virtual switch ?<br>`Get-VirtualSwitch`<br><img src=Screen\59.png><br><br>
 
 ## <ins>5.2 Exploration de l’hôte ESXi via la ligne de commande (ESXcli) :</ins>
 
